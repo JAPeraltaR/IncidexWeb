@@ -1,10 +1,18 @@
 import { NgModule } from "@angular/core";
+import { CentralComponent } from "./components/central/central.component";
+import { LoginPageComponent } from "./pages/loginPage/loginPage.component";
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    CentralComponent,
+    LoginPageComponent
+  ],
   imports: [],
-  exports: []
+  exports: [
+    LoginPageComponent
+  ]
 })
+
 export class LoginModule{
 
 }
