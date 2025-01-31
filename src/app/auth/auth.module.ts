@@ -13,6 +13,6 @@ import { LoginPageComponent } from "./pages/loginPage/loginPage.component";
   ]
 })
 
-export class LoginModule{
+export class AuthModule{
 
 }

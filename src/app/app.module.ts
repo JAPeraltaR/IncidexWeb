@@ -5,8 +5,12 @@ import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { HomePageModule } from './homePage/home-page.module';
-import { LoginModule } from './login/login.module';
+
+import { AuthModule } from './auth/auth.module';
+import { HomePageModule } from './home/home-page.module';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { provideHttpClient } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -17,10 +21,13 @@ import { LoginModule } from './login/login.module';
     AppRoutingModule,
     BrowserModule,
     HomePageModule,
-    LoginModule,
+    AuthModule,
     SharedModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync(),
+    provideHttpClient()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

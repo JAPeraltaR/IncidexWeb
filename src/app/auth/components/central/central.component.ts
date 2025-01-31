@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { LoginService } from '../../services/login.services';
+import { LoginService } from '../../services/auth.services';
 
 @Component({
-  selector: 'login-central',
+  selector: 'auth-central',
   standalone: false,
   templateUrl: './central.component.html',
   styleUrl: './central.component.css'
