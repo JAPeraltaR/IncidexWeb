@@ -5,8 +5,7 @@ import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { HomePageModule } from './homePage/home-page.module';
-import { LoginModule } from './login/login.module';
+import { HomeModule } from './home/home.module';
 
 
 @NgModule({
@@ -16,8 +15,7 @@ import { LoginModule } from './login/login.module';
   imports: [
     AppRoutingModule,
     BrowserModule,
-    HomePageModule,
-    LoginModule,
+    HomeModule,
     SharedModule
   ],
   providers: [],
